@@ -40,7 +40,14 @@
     var icon = document.getElementById("icon");
 
     icon.onclick = function() {
-        mySong.play();
+        if(mySong.paused){
+            mySong.play();
+            img.src="/images/pause-removebg-preview.png U";
+        }else{
+            mySong.pause();
+            img.src="/images/pause-removebg-preview.png U";
+
+        }
     }
 
     
